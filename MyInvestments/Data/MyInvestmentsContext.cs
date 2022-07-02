@@ -25,5 +25,7 @@ namespace MyInvestments.Data
         public DbSet<CompanyTypesMapping> CompanyTypesMapping { get; set; }
 
         public DbSet<MutualFundSchemeTypesMaster> MutualFundSchemeTypesMaster { get; set; }
+
+        public DbSet<DepositInvestments> DepositInvestments { get; set; }
     }
 }

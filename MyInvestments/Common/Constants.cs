@@ -1,4 +1,6 @@
-﻿namespace MyInvestments.Common
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MyInvestments.Common
 {
     public sealed class Constants
     {
@@ -45,6 +47,14 @@
         {
             MutualFundSchemeTypeId,
             MutualFundSchemeTypeName
+        }
+
+        public enum DepositTypes 
+        {
+            [Display(Name="Fixed Deposit")]
+            FixedDeposit = 1,
+            [Display(Name = "Recurring Deposit")]
+            RecurringDeposit = 2
         }
 
         #endregion
